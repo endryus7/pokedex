@@ -23,15 +23,15 @@ function convertPokemonToHtml(pokemon) {
 
 const pokemonlist = document.getElementById('pokemonlist')
 
-fetch(url)
-    .then((response) => response.json())
-    .then((jsonBody) => jsonBody.results)
-    .then((pokemons) => {
-        for (let i = 0; i < pokemons.length; i++) {
-            const pokemon = pokemons[i];
-            pokemonlist.innerHTML += convertPokemonToHtml(pokemon)
-        }
-    })
-    .catch((error) => console.log(error)) 
+//arrow functions (funtion() igual a () =>)
+pokeApi.getPokemons().then((pokemons = []) => {
+
+    const newList = pokemons.map(convertPokemonToHtml).join('')
+
+    const newHtml = newList.join('')
+    pokemonlist.innerHTML += newHtml
+})
+    
+    
   
 
