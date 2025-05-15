@@ -33,13 +33,13 @@
     justify-content: space-between;
 }
 
-.pokemon .detalhes .movimentos {
+.pokemon .detalhes .types {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.pokemon .detalhes .movimentos .movimento {
+.pokemon .detalhes .types .type {
     background-color: #61e1ca;;
     color: white;
     padding: 0.25rem 0.5rem;
