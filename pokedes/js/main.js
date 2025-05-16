@@ -42,5 +42,3 @@ verMais.addEventListener('click', () => {
          loadPokemonItens(offset, limit)
     }
 })
-
-
