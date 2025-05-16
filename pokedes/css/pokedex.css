@@ -22,7 +22,7 @@
     background-color: #678fee;
 }
 
-.eletric {
+.electric {
     background-color: #f7cf2e;
 }
 
@@ -127,7 +127,7 @@
     height: 80px;
 }
 
-.carregarMais {
+#carregarMais {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -136,7 +136,7 @@
     padding: 1rem;
 }
 
-.carregarMais button {
+#carregarMais button {
     background-color: #6c79db;
     color: white;
     padding: 0.25rem 0.5rem;
