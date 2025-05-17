@@ -1,6 +1,6 @@
 const pokemonlist = document.getElementById('pokemonlist')
 const verMais = document.getElementById('verMais')
-const maxRegistro = 649 
+const maxRegistro = 151 
 const limit = 16
 let offset = 0
 
