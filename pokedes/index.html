@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/pokedex.css">
     <link rel="stylesheet" href="./css/media-query.css">
+    <link rel="stylesheet" href="./css/modal.css">
 </head>
 
 <body>
@@ -27,6 +28,24 @@
     
         </ol>
     </section>
+
+    <!-- Modal detalhes -->
+<div id="pokemonModal" class="modal">
+  <div class="modal-content ${pokemonType}">
+    <span class="close-modal">&times;</span>
+    <div class="modal-header">
+      <h2 id="modalPokemonName"></h2>
+      <span class="modal-number" id="modalPokemonNumber"></span>
+    </div>
+    <img id="modalPokemonImage" src="" alt="" class="modal-image">
+    <div class="modal-types" id="modalPokemonTypes"></div>
+    <div class="modal-stats">
+      <p><strong>HP:</strong> <span id="modalPokemonHp"></span></p>
+      <p><strong>Peso:</strong> <span id="modalPokemonWeight"></span> kg</p>
+      <p><strong>Altura:</strong> <span id="modalPokemonHeight"></span> m</p>
+    </div>
+  </div>
+</div>
 
     <div id="carregarMais">
         <button id="verMais" type="button">
