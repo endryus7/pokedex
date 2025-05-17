@@ -5,5 +5,9 @@ class Pokemon {
     type;
     types = [];
     photo;
-}
 
+    // Modal
+    weight;
+    height;
+    stats = [];
+}
