@@ -2,24 +2,19 @@
 const pokeApi = {}
 
 function convertePokeApiDetailToPokemon(pokeDetail) {
-    const pokemon = new Pokemon();
-    pokemon.number = pokeDetail.id;
-    pokemon.name = pokeDetail.name;
+    const pokemon = new Pokemon()
+    pokemon.number = pokeDetail.id
+    pokemon.name = pokeDetail.name
     
-    const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name);
-    const [type] = types;
+    const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name)
+    const [type] = types
     
-    pokemon.types = types;
-    pokemon.type = type;
-    
+    pokemon.types = types
+    pokemon.type = type
+
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
 
-    // Modal
-    pokemon.weight = pokeDetail.weight;
-    pokemon.height = pokeDetail.height;
-    pokemon.stats = pokeDetail.stats;
-    
-    return pokemon;
+    return pokemon
 }
 
 pokeApi.getPokemonDetail = (pokemon) => {
